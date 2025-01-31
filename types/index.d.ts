@@ -1,4 +1,6 @@
 /* eslint-disable no-unused-vars */
+import { authFormSchema } from '@/lib/utils';
+
 
 declare type SearchParamProps = {
     params: { [key: string]: string };
@@ -8,14 +10,14 @@ declare type SearchParamProps = {
   // ========================================
   
   declare type SignUpParams = {
-    firstName: string;
-    lastName: string;
-    address1: string;
-    city: string;
-    state: string;
-    postalCode: string;
-    dateOfBirth: string;
-    ssn: string;
+    firstName?: string;
+    lastName?: string;
+    address1?: string;
+    city?: string;
+    state?: string;
+    postalCode?: string;
+    dateOfBirth?: string;
+    ssn?: string;
     email: string;
     password: string;
   };
@@ -328,3 +330,6 @@ declare type SearchParamProps = {
   declare interface getBankByAccountIdProps {
     accountId: string;
   }
+
+
+  
